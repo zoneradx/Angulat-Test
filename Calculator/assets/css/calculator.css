@@ -1,0 +1,53 @@
+p {
+    font-size:12px;
+}
+
+.thinborder {
+    border:1px solid #ccc;
+    width:206px;
+    height:60px;
+    background:black;
+}
+
+.calcbuttons {
+    padding:10px;
+}
+
+.numberbutton {
+    width:35px;
+}
+
+.operationbutton {
+    width:35px;
+}
+
+.clearbutton {
+    width:35px;
+    background-color: #1ee9ff;
+    color:black;
+}
+
+.output {
+    background:black;
+    color: #1ee9ff;
+    font-family: "Courier New", Courier;
+    padding:0 10px;
+    text-align:right;
+    font-size:14px;
+}
+
+.calcbody {
+
+    background: #268073;
+    width: 210px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #888888;
+
+}
+.container{
+
+    padding-left: 555px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 150px;
+}
