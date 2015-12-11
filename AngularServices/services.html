@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Angular js Services</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="container top" ng-app="app">
+    <div class="col-lg-9" ng-controller="CalculatorController">
+        Enter a number:
+        <input class="input-lg" type="number" ng-model="number" />
+        <button class="btn-info" ng-click="doSquare()">X<sup>2</sup></button>
+        <button class="btn-success" ng-click="doCube()">X<sup>3</sup></button>
+
+        <div class="btn-lg">Answer: {{answer}}</div>
+    </div>
+</div>
+
+
+<script src="lib/angular/angular.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>

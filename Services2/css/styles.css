@@ -1,0 +1,16 @@
+
+.sort-icon {
+    font-size: 9px;
+    margin-left: 5px;
+}
+
+th {
+	cursor:pointer;
+}
+.search{
+    margin-bottom: 10px;
+}
+.top{
+    margin-top: 100px;
+    margin-left: 100px;
+}

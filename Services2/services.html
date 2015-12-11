@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Angular js Services</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="lib/angular/angular.js"></script>
+</head>
+<body>
+<div ng-app="app" ng-controller="ContactController">
+    <form>
+        <label>Name</label>
+        <input type="text" name="name" ng-model="newcontact.name"/>
+        <label>Email</label>
+        <input type="text" name="email" ng-model="newcontact.email"/>
+        <label>Phone</label>
+        <input type="text" name="phone" ng-model="newcontact.phone"/>
+        <br/>
+        <input type="hidden" ng-model="newcontact.id" />
+        <input type="button" value="Save" ng-click="saveContact()" />
+    </form>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contact in contacts">
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.phone }}</td>
+            <td>
+                <a  href="#" ng-click="edit(contact.id)">edit</a> |
+                <a href="#" ng-click="delete(contact.id)">delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<script src="app/app.js"></script>
+</body>
+</html>
